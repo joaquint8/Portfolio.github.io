@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="estilos.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Karla:wght@200;500&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/272199268b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="Inicio">
+            <div class="header-nav bajo">
+                <div>
+                    <a href="#Inicio">JP</a>
+                </div>
+                <div>
+                    <a href="#experiencia">Proyectos</a>
+                    <a href="#contactame">Contacto</a>
+                </div>
+            </div>
+            <div class="header-contenido">
+                <div class="header-contenido--texto">
+                    <h1>Joaquin Pavone - Programador <b>Junior</b></h2>
+                    <p>Apasionado por la informatica. Me encanta brindar soluciones optimas que potencien tus ventas, generando una reaccion inmersiva a los clientes.</p>
+                    <span>
+                        <a href="https://www.linkedin.com/in/joaquin-pavone-9b881a247/" target="_blank">
+                            <i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i>
+                        </a>
+                        <a href="https://github.com/joaquint8" target="_blank">
+                            <i class="fa-brands fa-square-github" style="color: #f5f5f5;"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="header-contenido--imagen">
+                    <img src="descargar.jpg" alt="Joaquin Pavone">
+                </div>
+            </div>
+            <div class="header-contenido-stack">
+                <p>Stack |</p>
+                <i class="devicon-csharp-plain colored"></i>
+                <i class="devicon-dotnetcore-plain colored"></i>    
+                <i class="devicon-mysql-plain"></i>
+                <i class="fa-brands fa-html5" style="color: #e34c26;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #264de4;"></i>
+            </div>
+        </header>
+        <main>
+            <section id="experiencia" class="experiencia">
+                <h2>Experiencia</h2>
+                <div class="experiencia-e1">
+                    <label for="">SRD Project</label>
+                    <div class="experiencia-e1--card">
+                        <a href="https://github.com/LorenzoGiacchetta/E.M.A-Project" target="_blank">
+                            <video class="miVideo">
+                                <source src="SRD Project.mp4">
+                            </video>
+                        </a>
+                        <p>
+                            Sistema de reconocimiendo digital o SRD, es un proyecto propio en el cual, junto a mis compañeros, desarrollamos un servicio de reconocimiento de caracteres en python (haciendo uso de una vision artificial), el cual utilizamos como api para nuestro cliente en blazor. La aplicacion se destina al control y gestion de una playa de estacionamiento. En la dicha se podra generar pagos por estadia automaticamente, los cuales son cargados en un QR para que el cliente pueda pagar al irse.
+                            <a style="display: block;" href="https://github.com/LorenzoGiacchetta/E.M.A-Project" target="_blank">Ver aqui.</a>
+                        </p>
+                    </div>
+                    
+                    <label for="">Aptitudes dadas: </label>
+                    <ul>
+                        <li>Trabajo en grupo</li>
+                        <li>Control de versiones</li>
+                        <li>Blazor</li>
+                        <li>.NET</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Entity Framework</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Ant Design Blazor</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="experiencia-e2">
+                    <label for="">Bomberos Voluntarios Software</label>
+                    <div class="experiencia-e2--card">
+                        <a href="https://bomberos.azurewebsites.net" target="_blank">
+                            <video class="miVideo">
+                                <source src="BomberosApp.mp4"/>
+                            </video>
+                        </a>
+                        <p>
+                            Practicas profesionales en las que desarrollamos un sistema de gestion para el cuartel de bomberos voluntarios de nuestra ciudad.
+                            <a style="display: block;" href="https://github.com/EEST1Chivilcoy/BomberosVoluntariosChivilcoy" target="_blank">Ver aqui.</a>
+                        </p>
+                    </div>
+                    <label for="">Aptitudes dadas: </label> 
+                    <ul>
+                        <li>Trabajo en grupo</li>
+                        <li>Control de versiones</li>
+                        <li>Blazor</li>
+                        <li>.NET</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>Entity Framework</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Ant Design Blazor</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contactame" class="contactame">
+                <h2>Contactame</h2>
+                <div class="contactame-cont">
+                    <form id="myForm" action="mailto:joaco.t04@gmail.com" method="get" enctype="text/plain">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <input type="text" id="correo" name="_replyto" placeholder="Correo">
+                        <textarea id="mensaje" name="body" placeholder="Mensaje:"></textarea>
+                        <input type="submit" value="Enviar" onclick="document.getElementById('myForm').reset();">
+                    </form>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <a href="https://www.instagram.com/jota.ocho_/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXGjMJvrgFnCbNXkRLHPNKqQKgmQJZCmwhKGGSSPLnDCTLKTkNMDwDjRCwfnRnzpgclSH" target="_blank">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://twitter.com/joacopavone" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <div>
+                <p>
+                    &copy; 2023. Todos los derechos reservados by Joaquin Pavone
+                </p>
+            </div>
+        </footer>
+        <script src="funcionVideos.js"></script>
+        <script src="funcionNav.js"></script>
+    </body>
+</html>
