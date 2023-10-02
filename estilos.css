@@ -26,7 +26,7 @@ html{
 body{
     background-color: var(--miGama10);
     color: var(--miGama03);
-    max-width: 750px;
+    max-width: 767px;
     min-width: 320px;
     height: 100vh;
     display: grid;
@@ -107,6 +107,9 @@ footer{
 }
 .header-contenido--imagen img{
     border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
 }
 .header-contenido-stack{
     display: flex;
@@ -253,14 +256,16 @@ footer{
     height: 3em;
     gap: .5em;
 }
-
 footer div:first-child{
+    display: none;
+}
+footer div:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-footer div:first-child a:-webkit-any-link{
+footer div:nth-child(2) a:-webkit-any-link{
     text-decoration: none;
     color: var(--letrasB);
 }
@@ -273,4 +278,81 @@ footer div:last-child p{
     color: var(--letrasB);
     font-size: 13px;
     font-family: 'Karla', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        padding: 0;
+    }
+    footer div:first-child{
+        display:inline-block;
+        text-align: end;
+        background-color: transparent;
+    }
+    footer div:first-child button{
+        background-color: var(--letrasB);
+        border: none;
+        padding: 3px 5px;
+        border-radius: 2px;
+        margin-right: 10px;
+        box-sizing: border-box;
+        animation: rebote 1.5s infinite;
+    }
+    .header-nav{
+        position: inherit;
+        width: auto;
+    }
+    .header-contenido{
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        gap: 0;
+        margin-top: 0;
+    }
+    .header-contenido--imagen{
+        padding: 1em;
+    }
+    .header-contenido--texto h1{
+        font-size: 2em;
+    }
+    .header-contenido-stack{
+        justify-content: center;
+        margin-top: 1.5em;
+    }
+    .experiencia-e1--card, .experiencia-e2--card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .experiencia-e1--card a, .experiencia-e1--card p,
+    .experiencia-e2--card a, .experiencia-e2--card p{
+        width: 100%;
+    }
+    .experiencia{
+        padding: 4em 0;
+    }
+    .contactame {
+        padding: 2em 0;
+    }
+    footer{
+        height: 0;
+        gap: 0;
+    }
+    footer div:last-child {
+        padding: 0 0 1em 0;
+    }
+    footer div:last-child p{
+        text-align: center;
+    }
+
+    header, main, footer{
+        padding: 0 1em;
+    }
+}
+
+@keyframes rebote {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
 }

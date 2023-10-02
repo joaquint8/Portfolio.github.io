@@ -23,3 +23,6 @@ function previewFinal(video) {
   video.playbackRate = 1;
   video.pause();
 }
+
+
+
