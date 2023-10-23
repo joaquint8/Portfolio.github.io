@@ -215,6 +215,11 @@ form {
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
     transition: all 0.3s ease-in-out;
 }
+
+textarea{
+    resize: none ;
+}
+
 form input, form textarea {
     outline: none;
 }
@@ -231,7 +236,7 @@ input[type=text], textarea {
 }
 
 input[type=text]:focus, textarea:focus {
-    border: 2px solid var(--miGama05);
+    border: 1px solid var(--miGama05);
 }
 
 input[type=submit] {
@@ -291,7 +296,7 @@ footer div:last-child p{
     }
     footer div:first-child button{
         background-color: var(--letrasB);
-        border: none;
+        border: none;   
         padding: 3px 5px;
         border-radius: 2px;
         margin-right: 10px;
