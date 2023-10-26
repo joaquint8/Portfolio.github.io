@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
         <link rel="stylesheet" href="estilos.css">
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -118,11 +119,14 @@
             <section id="contactame" class="contactame">
                 <h2>Contactame</h2>
                 <div class="contactame-cont">
-                    <form id="myForm" action="mailto:joaco.t04@gmail.com" method="get" enctype="text/plain">
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                        <input type="text" id="correo" name="_replyto" placeholder="Correo" required>
-                        <textarea id="mensaje" name="body" placeholder="Mensaje" required></textarea>
-                        <input type="submit" value="Enviar" onclick="document.getElementById('myForm').reset();">
+                    <form action="https://formsubmit.co/joaco.t04@gmail.com" method="POST">
+                        <input type="text" name="name" required placeholder="Nombre" >
+                        <input type="email" name="email" required placeholder="Correo" >   
+                        <textarea name="comments" placeholder="Mensaje" required></textarea>
+                        <input type="submit">
+                        <!-- personalizaciones para formsubmit -->
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </section>
